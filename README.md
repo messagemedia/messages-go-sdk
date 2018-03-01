@@ -4,7 +4,13 @@
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
 ## ⭐️ Installing via Go Get
-TODO: Add Install
+Install via Go Get:
+run `go get github.com/messagemedia/messages-go-sdk`
+
+Alternatively, import the sdk directly into your project by adding the following
+```go
+import messagemediamessages_lib "github.com/messagemedia/messages-go-sdk"
+```
 
 ## 🎬 Get Started
 It's easy to get started. Simply enter the API Key and secret you obtained from the [MessageMedia Developers Portal](https://developers.messagemedia.com) into the code snippet below and a mobile number you wish to send to.
