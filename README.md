@@ -7,11 +7,6 @@ The MessageMedia Messages API provides a number of endpoints for building powerf
 Install via Go Get:
 run `go get github.com/messagemedia/messages-go-sdk`
 
-Alternatively, import the sdk directly into your project by adding the following
-```go
-import messagemediamessages_lib "github.com/messagemedia/messages-go-sdk"
-```
-
 ## 🎬 Get Started
 It's easy to get started. Simply enter the API Key and secret you obtained from the [MessageMedia Developers Portal](https://developers.messagemedia.com) into the code snippet below and a mobile number you wish to send to.
 
@@ -24,14 +19,14 @@ package main
 import (
     "encoding/json"
     "fmt"
-    "messagemediamessages_lib"
+    "github.com/MessageMedia/messages-go-sdk"
     "github.com/MessageMedia/messages-go-sdk/messages_pkg"
     "github.com/MessageMedia/messages-go-sdk/models_pkg"
 )
 
 func main() {
-    messagemediamessages_lib.Config.BasicAuthUserName = "YOUR_API_KEY"
-    messagemediamessages_lib.Config.BasicAuthPassword = "YOUR_SECRET_KEY"
+    messagemedia_messages_sdk.Config.BasicAuthUserName = "YOUR_API_KEY"
+    messagemedia_messages_sdk.Config.BasicAuthPassword = "YOUR_SECRET_KEY"
 
     messages := messages_pkg.NewMESSAGES()
     bodyValue := []byte(`{
@@ -57,13 +52,13 @@ package main
 
 import (
     "fmt"
-    "messagemediamessages_lib"
+    "github.com/MessageMedia/messages-go-sdk"
     "github.com/MessageMedia/messages-go-sdk/messages_pkg"
 )
 
 func main() {
-    messagemediamessages_lib.Config.BasicAuthUserName = "YOUR_API_KEY"
-    messagemediamessages_lib.Config.BasicAuthPassword = "YOUR_SECRET_KEY"
+    messagemedia_messages_sdk.Config.BasicAuthUserName = "YOUR_API_KEY"
+    messagemedia_messages_sdk.Config.BasicAuthPassword = "YOUR_SECRET_KEY"
 
     messages := messages_pkg.NewMESSAGES()
     messageId := "YOUR_MESSAGE_ID"
@@ -83,14 +78,14 @@ package main
 
 import (
     "fmt"
-    "messagemediamessages_lib"
+    "github.com/MessageMedia/messages-go-sdk"
     "github.com/MessageMedia/messages-go-sdk/replies_pkg"
     "github.com/MessageMedia/messages-go-sdk/models_pkg"
 )
 
 func main() {
-    messagemediamessages_lib.Config.BasicAuthUserName = "YOUR_API_KEY"
-    messagemediamessages_lib.Config.BasicAuthPassword = "YOUR_API_SECRET"
+    messagemedia_messages_sdk.Config.BasicAuthUserName = "YOUR_API_KEY"
+    messagemedia_messages_sdk.Config.BasicAuthPassword = "YOUR_API_SECRET"
 
     replies := replies_pkg.NewREPLIES()
 
@@ -109,14 +104,14 @@ package main
 
 import (
     "fmt"
-    "messagemediamessages_lib"
+    "github.com/MessageMedia/messages-go-sdk"
     "github.com/MessageMedia/messages-go-sdk/deliveryreports_pkg"
     "github.com/MessageMedia/messages-go-sdk/models_pkg"
 )
 
 func main() {
-    messagemediamessages_lib.Config.BasicAuthUserName = "YOUR_API_KEY"
-    messagemediamessages_lib.Config.BasicAuthPassword = "YOUR_API_SECRET"
+    messagemedia_messages_sdk.Config.BasicAuthUserName = "YOUR_API_KEY"
+    messagemedia_messages_sdk.Config.BasicAuthPassword = "YOUR_API_SECRET"
 
     deliveryReports := deliveryreports_pkg.NewDELIVERYREPORTS()
 
