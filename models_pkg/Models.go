@@ -1,5 +1,5 @@
 /*
- * messagemediamessages_lib
+ * messagemedia_messages_sdk
  *
  *
  */

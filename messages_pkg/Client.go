@@ -1,5 +1,5 @@
 /*
- * messagemediamessages_lib
+ * messagemedia_messages_sdk
  *
  *
  */
@@ -41,7 +41,7 @@ func (me *MESSAGES_IMPL) UpdateCancelScheduledMessage (
             messageId string,
             body *models_pkg.CancelScheduledMessageRequest) (interface{}, error) {
         //the base uri for api requests
-    _queryBuilder := messagemediamessages_lib.BASEURI;
+    _queryBuilder := messagemedia_messages_sdk.BASEURI;
 
     //prepare query string for API call
    _queryBuilder = _queryBuilder + "/v1/messages/{messageId}"
@@ -72,7 +72,7 @@ func (me *MESSAGES_IMPL) UpdateCancelScheduledMessage (
     }
 
     //prepare API request
-    _request := unirest.PutWithAuth(_queryBuilder, headers, body, messagemediamessages_lib.Config.BasicAuthUserName, messagemediamessages_lib.Config.BasicAuthPassword)
+    _request := unirest.PutWithAuth(_queryBuilder, headers, body, messagemedia_messages_sdk.Config.BasicAuthUserName, messagemedia_messages_sdk.Config.BasicAuthPassword)
     //and invoke the API call request to fetch the response
     _response, err := unirest.AsString(_request);
     if err != nil {
@@ -136,7 +136,7 @@ func (me *MESSAGES_IMPL) UpdateCancelScheduledMessage (
 func (me *MESSAGES_IMPL) GetMessageStatus (
             messageId string) (interface{}, error) {
         //the base uri for api requests
-    _queryBuilder := messagemediamessages_lib.BASEURI;
+    _queryBuilder := messagemedia_messages_sdk.BASEURI;
 
     //prepare query string for API call
    _queryBuilder = _queryBuilder + "/v1/messages/{messageId}"
@@ -166,7 +166,7 @@ func (me *MESSAGES_IMPL) GetMessageStatus (
     }
 
     //prepare API request
-    _request := unirest.GetWithAuth(_queryBuilder, headers, messagemediamessages_lib.Config.BasicAuthUserName, messagemediamessages_lib.Config.BasicAuthPassword)
+    _request := unirest.GetWithAuth(_queryBuilder, headers, messagemedia_messages_sdk.Config.BasicAuthUserName, messagemedia_messages_sdk.Config.BasicAuthPassword)
     //and invoke the API call request to fetch the response
     _response, err := unirest.AsString(_request);
     if err != nil {
@@ -265,7 +265,7 @@ func (me *MESSAGES_IMPL) GetMessageStatus (
 func (me *MESSAGES_IMPL) CreateSendMessages (
             body *models_pkg.SendMessagesRequest) (*models_pkg.SendMessagesResponse, error) {
         //the base uri for api requests
-    _queryBuilder := messagemediamessages_lib.BASEURI;
+    _queryBuilder := messagemedia_messages_sdk.BASEURI;
 
     //prepare query string for API call
    _queryBuilder = _queryBuilder + "/v1/messages"
@@ -287,7 +287,7 @@ func (me *MESSAGES_IMPL) CreateSendMessages (
     }
 
     //prepare API request
-    _request := unirest.PostWithAuth(_queryBuilder, headers, body, messagemediamessages_lib.Config.BasicAuthUserName, messagemediamessages_lib.Config.BasicAuthPassword)
+    _request := unirest.PostWithAuth(_queryBuilder, headers, body, messagemedia_messages_sdk.Config.BasicAuthUserName, messagemedia_messages_sdk.Config.BasicAuthPassword)
     //and invoke the API call request to fetch the response
     _response, err := unirest.AsString(_request);
     if err != nil {

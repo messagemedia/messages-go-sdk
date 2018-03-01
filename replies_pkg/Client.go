@@ -1,5 +1,5 @@
 /*
- * messagemediamessages_lib
+ * messagemedia_messages_sdk
  *
  *
  */
@@ -41,7 +41,7 @@ type REPLIES_IMPL struct { }
 func (me *REPLIES_IMPL) CreateConfirmRepliesAsReceived (
             body *models_pkg.ConfirmRepliesAsReceivedRequest) (interface{}, error) {
         //the base uri for api requests
-    _queryBuilder := messagemediamessages_lib.BASEURI;
+    _queryBuilder := messagemedia_messages_sdk.BASEURI;
 
     //prepare query string for API call
    _queryBuilder = _queryBuilder + "/v1/replies/confirmed"
@@ -63,7 +63,7 @@ func (me *REPLIES_IMPL) CreateConfirmRepliesAsReceived (
     }
 
     //prepare API request
-    _request := unirest.PostWithAuth(_queryBuilder, headers, body, messagemediamessages_lib.Config.BasicAuthUserName, messagemediamessages_lib.Config.BasicAuthPassword)
+    _request := unirest.PostWithAuth(_queryBuilder, headers, body, messagemedia_messages_sdk.Config.BasicAuthUserName, messagemedia_messages_sdk.Config.BasicAuthPassword)
     //and invoke the API call request to fetch the response
     _response, err := unirest.AsString(_request);
     if err != nil {
@@ -164,7 +164,7 @@ func (me *REPLIES_IMPL) CreateConfirmRepliesAsReceived (
  */
 func (me *REPLIES_IMPL) GetCheckReplies () (*models_pkg.CheckRepliesResponse, error) {
         //the base uri for api requests
-    _queryBuilder := messagemediamessages_lib.BASEURI;
+    _queryBuilder := messagemedia_messages_sdk.BASEURI;
 
     //prepare query string for API call
    _queryBuilder = _queryBuilder + "/v1/replies"
@@ -185,7 +185,7 @@ func (me *REPLIES_IMPL) GetCheckReplies () (*models_pkg.CheckRepliesResponse, er
     }
 
     //prepare API request
-    _request := unirest.GetWithAuth(_queryBuilder, headers, messagemediamessages_lib.Config.BasicAuthUserName, messagemediamessages_lib.Config.BasicAuthPassword)
+    _request := unirest.GetWithAuth(_queryBuilder, headers, messagemedia_messages_sdk.Config.BasicAuthUserName, messagemedia_messages_sdk.Config.BasicAuthPassword)
     //and invoke the API call request to fetch the response
     _response, err := unirest.AsString(_request);
     if err != nil {
