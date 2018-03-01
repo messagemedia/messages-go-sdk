@@ -4,7 +4,7 @@
  *
  */
 
-package messagemediamessages_lib
+package messagemedia_messages_sdk
 
 /** The base Uri for API calls */
 const BASEURI string = "https://api.messagemedia.com"
