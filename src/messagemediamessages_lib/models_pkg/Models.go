@@ -7,6 +7,8 @@
 package models_pkg
 
 
+import uuid "github.com/satori/go.uuid"
+
 /*
  * Structure for the custom type CheckDeliveryReportsResponse
  */
