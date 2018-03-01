@@ -10,7 +10,7 @@ import(
 	"encoding/json"
 	"github.com/MessageMedia/messages-go-sdk/models_pkg"
 	"github.com/apimatic/unirest-go"
-	"messagemediamessages_lib"
+	"github.com/MessageMedia/messages-go-sdk"
 	"github.com/MessageMedia/messages-go-sdk/apihelper_pkg"
 )
 /*
@@ -212,4 +212,3 @@ func (me *REPLIES_IMPL) GetCheckReplies () (*models_pkg.CheckRepliesResponse, er
     }
     return retVal, nil
 }
-
