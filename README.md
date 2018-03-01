@@ -25,8 +25,8 @@ import (
     "encoding/json"
     "fmt"
     "messagemediamessages_lib"
-    "messagemediamessages_lib/messages_pkg"
-    "messagemediamessages_lib/models_pkg"
+    "github.com/MessageMedia/messages-go-sdk/messages_pkg"
+    "github.com/MessageMedia/messages-go-sdk/models_pkg"
 )
 
 func main() {
@@ -58,7 +58,7 @@ package main
 import (
     "fmt"
     "messagemediamessages_lib"
-    "messagemediamessages_lib/messages_pkg"
+    "github.com/MessageMedia/messages-go-sdk/messages_pkg"
 )
 
 func main() {
@@ -84,8 +84,8 @@ package main
 import (
     "fmt"
     "messagemediamessages_lib"
-    "messagemediamessages_lib/replies_pkg"
-    "messagemediamessages_lib/models_pkg"
+    "github.com/MessageMedia/messages-go-sdk/replies_pkg"
+    "github.com/MessageMedia/messages-go-sdk/models_pkg"
 )
 
 func main() {
@@ -110,8 +110,8 @@ package main
 import (
     "fmt"
     "messagemediamessages_lib"
-    "messagemediamessages_lib/deliveryreports_pkg"
-    "messagemediamessages_lib/models_pkg"
+    "github.com/MessageMedia/messages-go-sdk/deliveryreports_pkg"
+    "github.com/MessageMedia/messages-go-sdk/models_pkg"
 )
 
 func main() {

@@ -6,7 +6,7 @@
 
 package replies_pkg
 
-import "messagemediamessages_lib/models_pkg"
+import "github.com/MessageMedia/messages-go-sdk/models_pkg"
 
 /*
  * Interface for the REPLIES_IMPL
