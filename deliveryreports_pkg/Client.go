@@ -8,10 +8,10 @@ package deliveryreports_pkg
 
 import(
 	"encoding/json"
-	"github.com/MessageMedia/messages-go-sdk/models_pkg"
+	"github.com/messagemedia/messages-go-sdk/models_pkg"
 	"github.com/apimatic/unirest-go"
-	"github.com/MessageMedia/messages-go-sdk"
-	"github.com/MessageMedia/messages-go-sdk/apihelper_pkg"
+	"github.com/messagemedia/messages-go-sdk"
+	"github.com/messagemedia/messages-go-sdk/apihelper_pkg"
 )
 /*
  * Client structure as interface implementation

@@ -19,9 +19,9 @@ package main
 import (
     "encoding/json"
     "fmt"
-    "github.com/MessageMedia/messages-go-sdk"
-    "github.com/MessageMedia/messages-go-sdk/messages_pkg"
-    "github.com/MessageMedia/messages-go-sdk/models_pkg"
+    "github.com/messagemedia/messages-go-sdk"
+    "github.com/messagemedia/messages-go-sdk/messages_pkg"
+    "github.com/messagemedia/messages-go-sdk/models_pkg"
 )
 
 func main() {
@@ -52,8 +52,8 @@ package main
 
 import (
     "fmt"
-    "github.com/MessageMedia/messages-go-sdk"
-    "github.com/MessageMedia/messages-go-sdk/messages_pkg"
+    "github.com/messagemedia/messages-go-sdk"
+    "github.com/messagemedia/messages-go-sdk/messages_pkg"
 )
 
 func main() {
@@ -78,9 +78,9 @@ package main
 
 import (
     "fmt"
-    "github.com/MessageMedia/messages-go-sdk"
-    "github.com/MessageMedia/messages-go-sdk/replies_pkg"
-    "github.com/MessageMedia/messages-go-sdk/models_pkg"
+    "github.com/messagemedia/messages-go-sdk"
+    "github.com/messagemedia/messages-go-sdk/replies_pkg"
+    "github.com/messagemedia/messages-go-sdk/models_pkg"
 )
 
 func main() {
@@ -104,9 +104,9 @@ package main
 
 import (
     "fmt"
-    "github.com/MessageMedia/messages-go-sdk"
-    "github.com/MessageMedia/messages-go-sdk/deliveryreports_pkg"
-    "github.com/MessageMedia/messages-go-sdk/models_pkg"
+    "github.com/messagemedia/messages-go-sdk"
+    "github.com/messagemedia/messages-go-sdk/deliveryreports_pkg"
+    "github.com/messagemedia/messages-go-sdk/models_pkg"
 )
 
 func main() {

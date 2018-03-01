@@ -6,7 +6,7 @@
 
 package deliveryreports_pkg
 
-import "github.com/MessageMedia/messages-go-sdk/models_pkg"
+import "github.com/messagemedia/messages-go-sdk/models_pkg"
 
 /*
  * Interface for the DELIVERYREPORTS_IMPL
