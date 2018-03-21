@@ -3,6 +3,8 @@
 
 The MessageMedia Messages API provides a number of endpoints for building powerful two-way messaging applications.
 
+![Alt Text](https://media.giphy.com/media/l0Exov2QmxF5Xwjkc/giphy.gif)
+
 ## ⭐️ Installing via Go Get
 Install via Go Get:
 run `go get github.com/messagemedia/messages-go-sdk`
@@ -123,7 +125,10 @@ func main() {
 ```
 
 ## 📕 Documentation
-The Go SDK Documentation can be viewed [here](DOCUMENTATION.md)
+Check out the [full API documentation](DOCUMENTATION.md) for more detailed information.
 
 ## 😕 Got Stuck?
 Please contact developer support at developers@messagemedia.com or check out the developer portal at [developers.messagemedia.com](https://developers.messagemedia.com/)
+
+## 📃 License
+Apache License. See the [LICENSE](LICENSE) file.
