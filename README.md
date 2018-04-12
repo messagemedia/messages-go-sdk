@@ -125,7 +125,7 @@ func main() {
 ## 📕 Documentation
 Check out the [full API documentation](DOCUMENTATION.md) for more detailed information.
 
-## 😕 Got Stuck?
+## 😕 Need help?
 Please contact developer support at developers@messagemedia.com or check out the developer portal at [developers.messagemedia.com](https://developers.messagemedia.com/)
 
 ## 📃 License
