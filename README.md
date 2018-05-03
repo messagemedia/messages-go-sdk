@@ -45,6 +45,44 @@ func main() {
 }
 ```
 
+### 🖼 Send an MMS
+* Destination numbers (`destination_number`) should be in the [E.164](http://en.wikipedia.org/wiki/E.164) format. For example, `+61491570156`.
+
+```go
+package main
+
+import (
+    "encoding/json"
+    "fmt"
+    "github.com/MessageMedia/messages-go-sdk"
+    "github.com/MessageMedia/messages-go-sdk/messages_pkg"
+    "github.com/MessageMedia/messages-go-sdk/models_pkg"
+)
+
+func main() {
+    messagemedia_messages_sdk.Config.BasicAuthUserName = "YOUR_API_KEY"
+    messagemedia_messages_sdk.Config.BasicAuthPassword = "YOUR_SECRET_KEY"
+
+    messages := messages_pkg.NewMESSAGES()
+    bodyValue := []byte(`{
+       "messages":[
+         {
+            "content":"Test",
+            "destination_number":"YOUR_MOBILE_NUMBER",
+            "format": "MMS",
+            "media":["https://upload.wikimedia.org/wikipedia/commons/6/6a/L80385-flash-superhero-logo-1544.png"]
+         }
+       ]
+    }`)
+
+    var body *models_pkg.SendMessagesRequest
+    json.Unmarshal(bodyValue, &body)
+
+    result, err := messages.CreateSendMessages(body)
+    fmt.Println(result, err)
+}
+```
+
 ### 🕓 Get Status of a Message
 You can get a messsage ID from a sent message by looking at the `message_id` from the response of the above example.
 ```go
